@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="CIG-Core" namespace="CIG\CS" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+
+	<description>CIG general Coding Standards</description>
+
+	<!--
+		   Include all sniffs in the PSR2 standard. Note that the path to the standard does not have
+		   to be specified as the PSR2 standard exists inside the PHP_CodeSniffer install directory.
+		-->
+	<rule ref="PSR12">
+		<exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine" />
+		<exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" />
+		<exclude name="PSR1.Methods.CamelCapsMethodName.NotCamelCaps" />
+
+		<!-- We may want to stop excluding this  |  wrap lines at 120 chars -->
+		<exclude name="Generic.Files.LineLength.TooLong" />
+
+	</rule>
+
+  <!-- Elevate undefined variables to an Error instead of a Warning. -->
+  <rule ref="VariableAnalysis.CodeAnalysis.VariableAnalysis.UndefinedVariable">
+    <type>error</type>
+  </rule>
+
+</ruleset>

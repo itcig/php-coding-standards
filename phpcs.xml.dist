@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="CIG Coding Standards" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+
+	<description>The coding standards for CIG's coding standard library</description>
+
+	<!--
+	#############################################################################
+	COMMAND LINE ARGUMENTS
+	https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml
+	#############################################################################
+	-->
+
+	<file>.</file>
+
+	<!-- Only check PHP files. -->
+	<arg name="extensions" value="php"/>
+
+	<!-- Show progress, show the error codes for each message (source). -->
+	<arg value="ps"/>
+
+	<!-- Strip the filepaths down to the relevant bit. -->
+	<arg name="basepath" value="."/>
+
+	<!-- Check up to 8 files simultaneously. -->
+	<arg name="parallel" value="8"/>
+
+	<!-- Enable caching to a fixed file. -->
+	<arg name="cache" value=".phpcs.cache"/>
+
+	<!-- Ignore git, in case someone created a branch ending in ".php" or something -->
+	<exclude-pattern>/.git/*</exclude-pattern>
+
+	<!--
+	   You can hard-code ignore patterns directly into your
+	   custom standard so you don't have to specify the
+	   patterns on the command line.
+
+	   The following two tags are equivalent to the command line argument:
+	   -ignore=*/tests/*,*/data/*
+	-->
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+
+
+	<rule ref="CIG" />
+
+	<!--
+	#############################################################################
+	USE THE PHPCSDev RULESET
+	This ruleset checks code against PSR2, PHPCompatibility and various
+	other sniffs.
+	For more information, see: https://github.com/PHPCSStandards/PHPCSDevTools
+	#############################################################################
+	-->
+
+	<config name="testVersion" value="7.2-"/>
+
+</ruleset>
