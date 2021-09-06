@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="CIG-Wordpress" namespace="CIG\CS" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+
+  <description>CIG Wordpress Coding Standards</description>
+
+  <rule ref="CIG-Core"/>
+  <rule ref="PHPCompatibilityWP" />
+
+</ruleset>
