@@ -9,12 +9,16 @@
 		-->
 	<rule ref="PSR12">
 		<exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine" />
-		<exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" />
 		<exclude name="PSR1.Methods.CamelCapsMethodName.NotCamelCaps" />
+    <exclude name="PSR12.Files.FileHeader.SpacingAfterBlock" />
+    <exclude name="PSR1.Files.SideEffects.FoundWithSymbols" />
 
 		<!-- We may want to stop excluding this  |  wrap lines at 120 chars -->
 		<exclude name="Generic.Files.LineLength.TooLong" />
 
+    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" />
+    <!-- Allow control structure like if/else statements to have a blank line at thhe bottom of each case -->
+    <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose" />
 	</rule>
 
   <!-- Elevate undefined variables to an Error instead of a Warning. -->
