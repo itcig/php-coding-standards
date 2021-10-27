@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/php-coding-standards",
-	"version": "0.2.14",
+	"version": "0.2.15",
 	"license": "MIT",
 	"description": "PHP_CodeSniffer rules (sniffs) to enforce CIG coding conventions",
 	"author": {
@@ -10,8 +10,7 @@
 	"homepage": "https://github.com/itcig/php-coding-standards",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/itcig/itcig.git",
-		"directory": "packages/php-packages/php-coding-standards"
+		"url": "git+https://github.com/itcig/php-coding-standards.git"
 	},
 	"scripts": {
 		"build": "echo 'Not implemented.'",
