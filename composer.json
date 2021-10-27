@@ -1,6 +1,6 @@
 {
 	"name": "itcig/php-coding-standards",
-	"version": "0.1.0",
+	"version": "0.2.11",
 	"type": "phpcodesniffer-standard",
 	"description": "PHP_CodeSniffer rules (sniffs) to enforce CIG coding conventions",
 	"keywords": [
@@ -39,8 +39,6 @@
 		"phpcompatibility/phpcompatibility-wp": "^2.1"
 	},
 	"require-dev": {
-		"php-parallel-lint/php-console-highlighter": "^0.5",
-		"php-parallel-lint/php-parallel-lint": "^1.0",
 		"phpcsstandards/phpcsdevtools": "^1.0",
 		"phpunit/phpunit": "^9.0"
 	},
@@ -51,19 +49,12 @@
 		"check-complete": "@php ./vendor/phpcsstandards/phpcsdevtools/bin/phpcs-check-feature-completeness -q ./CIG",
 		"check-complete-strict": "@php ./vendor/phpcsstandards/phpcsdevtools/bin/phpcs-check-feature-completeness ./CIG",
 		"format": "./vendor/bin/phpcbf --report=summary --standard=phpcs.xml.dist",
-		"lint": [
-			"@php ./vendor/php-parallel-lint/php-parallel-lint/parallel-lint . -e php --exclude vendor --exclude .git",
-			"@phpcs"
-		],
-		"lint-ci": "@php ./vendor/php-parallel-lint/php-parallel-lint/parallel-lint . -e php --exclude vendor --exclude .git --checkstyle",
 		"phpcs": "./vendor/bin/phpcs --report=summary --standard=phpcs.xml.dist",
 		"test": "./vendor/bin/phpunit --filter CIG ./vendor/squizlabs/php_codesniffer/tests/AllTests.php"
 	},
 	"extra": {
-		"autotagger": true,
-		"mirror-repo": "itcig/php-coding-standards",
 		"branch-alias": {
-			"dev-main": "0.1.x-dev"
+			"dev-main": "0.2.x-dev"
 		}
 	}
 }

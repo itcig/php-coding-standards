@@ -1,21 +1,30 @@
 {
 	"name": "@itcig/php-coding-standards",
-	"version": "0.2.0",
+	"version": "0.2.14",
+	"license": "MIT",
 	"description": "PHP_CodeSniffer rules (sniffs) to enforce CIG coding conventions",
-	"homepage": "https://github.com/itcig/php-coding-standards",
-	"bugs": {
-		"url": "https://github.com/itcig/itcig/issues"
+	"author": {
+		"name": "ITCIG",
+		"email": "it@capinfogroup.com"
 	},
+	"homepage": "https://github.com/itcig/php-coding-standards",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/itcig/php-coding-standards.git"
+		"url": "git+https://github.com/itcig/itcig.git",
+		"directory": "packages/php-packages/php-coding-standards"
 	},
-	"license": "GPL-2.0-or-later",
-	"author": "Automattic",
 	"scripts": {
 		"build": "echo 'Not implemented.'",
 		"clean": "true",
 		"distclean": "rm -rf node_modules && yarn run clean",
 		"install-if-deps-outdated": "yarn install --no-prod --frozen-lockfile"
+	},
+	"bugs": {
+		"url": "https://github.com/itcig/itcig/issues"
+	},
+	"extra": {
+		"autotagger": true,
+		"autorelease": true,
+		"mirror-repo": "itcig/php-coding-standards"
 	}
 }
