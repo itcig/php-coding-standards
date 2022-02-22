@@ -39,8 +39,7 @@
 		"phpcompatibility/phpcompatibility-wp": "^2.1"
 	},
 	"require-dev": {
-		"phpcsstandards/phpcsdevtools": "^1.0",
-		"phpunit/phpunit": "^9.0"
+		"phpcsstandards/phpcsdevtools": "^1.0"
 	},
 	"suggest": {
 		"roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
@@ -49,8 +48,7 @@
 		"check-complete": "@php ./vendor/phpcsstandards/phpcsdevtools/bin/phpcs-check-feature-completeness -q ./CIG",
 		"check-complete-strict": "@php ./vendor/phpcsstandards/phpcsdevtools/bin/phpcs-check-feature-completeness ./CIG",
 		"format": "./vendor/bin/phpcbf --report=summary --standard=phpcs.xml.dist",
-		"phpcs": "./vendor/bin/phpcs --report=summary --standard=phpcs.xml.dist",
-		"test": "./vendor/bin/phpunit --filter CIG ./vendor/squizlabs/php_codesniffer/tests/AllTests.php"
+		"phpcs": "./vendor/bin/phpcs --report=summary --standard=phpcs.xml.dist"
 	},
 	"extra": {
 		"branch-alias": {
