@@ -1,6 +1,6 @@
 {
 	"name": "itcig/php-coding-standards",
-	"version": "0.2.18",
+	"version": "0.2.19",
 	"type": "phpcodesniffer-standard",
 	"description": "PHP_CodeSniffer rules (sniffs) to enforce CIG coding conventions",
 	"keywords": [
