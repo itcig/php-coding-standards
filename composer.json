@@ -1,6 +1,6 @@
 {
 	"name": "itcig/php-coding-standards",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"type": "phpcodesniffer-standard",
 	"description": "PHP_CodeSniffer rules (sniffs) to enforce CIG coding conventions",
 	"keywords": [
@@ -55,7 +55,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-main": "0.3.x-dev"
+			"dev-main": "0.4.x-dev"
 		}
 	}
 }
