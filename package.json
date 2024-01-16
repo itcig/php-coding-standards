@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/php-coding-standards",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"license": "MIT",
 	"description": "PHP_CodeSniffer rules (sniffs) to enforce CIG coding conventions",
 	"author": {
